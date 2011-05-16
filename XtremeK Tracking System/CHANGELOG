@@ -1,0 +1,32 @@
+XtremeK Tracking System Changelog
+=================================
+
+Notes
+-----
+
+This is the changelog for the XtremeK Tracking System for the AlarmasABC 
+GPS Tracking System. This contains changes made to the webpage and all 
+sub-pages, dialogs, etc. in the website. 
+
+Changes
+-------
+
+Date        Version   Change Description
+----------  -------   -------------------------------------------------------------------
+2010-11-24	 v0.0.2   Created version 0.0.2 of the XtremeK Tracking System and DLL's.
+2010-11-09	 v0.0.1	  The TimeZone class now converts the database time to UTC, then to
+					  the correct time using the client time zone. Since the server time
+					  zone is EST, this can be done without any problems.
+2010-11-09	 v0.0.1	  Modified the historical dialog to use the new TimeZone class.
+2010-11-09	 v0.0.1	  Created a new LocalTime function to get the current client time.
+2010-11-09	 v0.0.1	  Modified the common map data functions to use the new TimeZone 
+					  class.
+2010-11-09	 v0.0.1	  Modified the login page to use the new TimeZone class.
+2010-11-09	 v0.0.1	  Created a new class to store the client time zone.
+2010-11-09	 v0.0.1	  Removed the TreeViewState file since we no longer use a tree view.
+2010-11-09	 v0.0.1	  Added a new TODO file.
+2010-11-09	 v0.0.1	  Cleaned up the function which reads the client time zone and added
+					  some comments.
+2010-11-09	 v0.0.1	  Cleaned up the code which reads the client timezone and added 
+					  comments.
+2010-11-09	 v0.0.1	  Created this changelog for v0.0.1 of the XtremeK Tracking System.

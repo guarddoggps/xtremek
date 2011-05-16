@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AFF75DF4-C573-4B36-9181-19E41FB538E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>AlarmasABC.BLL</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <RootNamespace>AlarmasABC.BLL</RootNamespace>
+    <ReleaseVersion>0.0.2</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binary\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binary\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="ErrorReports\ProcessErrorReport.cs" />
+    <Compile Include="ErrorReports\ProcessEvents.cs" />
+    <Compile Include="IAlopekBusinessLogic.cs" />
+    <Compile Include="InvokeOperations.cs" />
+    <Compile Include="ProcessCompany\ProcessCompanyNonQueries.cs" />
+    <Compile Include="ProcessCompany\ProcessCompanyQueries.cs" />
+    <Compile Include="ProcessCompany\ProcessImageUrl.cs" />
+    <Compile Include="ProcessContactInfo\ProcessContact.cs" />
+    <Compile Include="ProcessFleetPattern\ProcessCreatePattern.cs" />
+    <Compile Include="ProcessFleetPattern\ProcessMaintainanceStatus.cs" />
+    <Compile Include="ProcessFleetPattern\ProcessPattern.cs" />
+    <Compile Include="ProcessFleetPattern\ProcessUpdatePattern.cs" />
+    <Compile Include="ProcessIcon\ProcessIconNonQueries.cs" />
+    <Compile Include="ProcessLogin\ProcessLogin.cs" />
+    <Compile Include="ProcessMapData\ProcessBreadCrumbsData.cs" />
+    <Compile Include="ProcessMapData\ProcessGprsData.cs" />
+    <Compile Include="ProcessMapData\ProcessHistoricalMapData.cs" />
+    <Compile Include="ProcessMapData\ProcessMainMapData.cs" />
+    <Compile Include="ProcessPatternMaintenance\ProcessPatternMaintenance.cs" />
+    <Compile Include="ProcessPermission\ProcessSchemePermission.cs" />
+    <Compile Include="ProcessRulesData\ProcessRulesData.cs" />
+    <Compile Include="ProcessRulesData\ProcessSpeedingNotQueries.cs" />
+    <Compile Include="ProcessRulesData\ProcessSpeedingQueries.cs" />
+    <Compile Include="ProcessSafetyZone\ProcessSafetyZone.cs" />
+    <Compile Include="ProcessSecurityScheme\ProcessEditScheme.cs" />
+    <Compile Include="ProcessSecurityScheme\ProcessNewScheme.cs" />
+    <Compile Include="ProcessSecurityScheme\ProcessScheme.cs" />
+    <Compile Include="ProcessSupplies\ProcessSupplies.cs" />
+    <Compile Include="ProcessTreeData\ProcessTreeData.cs" />
+    <Compile Include="ProcessTreeData\ProcessUnitCount.cs" />
+    <Compile Include="ProcessUnit\ProcessUnitQueries.cs" />
+    <Compile Include="ProcessUnit\ProcessUnitTypeNotQueries.cs" />
+    <Compile Include="ProcessUnitModel\ProcessUnitModelNotQueries.cs" />
+    <Compile Include="ProcessUnitModels\ProcessUnitModelNotQueries.cs" />
+    <Compile Include="ProcessUnitModels\ProcessUnitModelQueries.cs" />
+    <Compile Include="ProcessUnitType\ProcessCompanyUnitTypeQueries.cs" />
+    <Compile Include="ProcessUnitType\ProcessUnitTypeNotQueries.cs" />
+    <Compile Include="ProcessUnitType\ProcessUnitTypeQueries.cs" />
+    <Compile Include="ProcessUnitUserWise\ProcessUnitUserWise.cs" />
+    <Compile Include="ProcessUser\ProcessAdmin.cs" />
+    <Compile Include="ProcessUser\ProcessUser.cs" />
+    <Compile Include="ProcessUser\ProcessUserGroupUnits.cs" />
+    <Compile Include="ProcessUser\ProcessUserPassword.cs" />
+    <Compile Include="ProcessUser\ProcessUsersUnitData.cs" />
+    <Compile Include="ProcessUser\ProcessUserUnits.cs" />
+    <Compile Include="ProcessUserGroup\ProcessGroupCompanyWise.cs" />
+    <Compile Include="ProcessUserGroup\ProcessUserGroup.cs" />
+    <Compile Include="ProcessUserWiseUnitCat\ProcessUserWiseUnitCat.cs" />
+    <Compile Include="TreeColor\TreeColor.cs" />
+    <Compile Include="ProcessUnitManagement\ProcessUnitManagementQueries.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ProcessMapData\ProcessAlerts.cs" />
+    <Compile Include="UnitCommands.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\AlarmasABC.DAL\AlarmasABC.DAL.csproj">
+      <Project>{397F2878-2606-40E2-88B7-0AC537F89DAF}</Project>
+      <Name>AlarmasABC.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlarmasABC.Core\AlarmasABC.Core.csproj">
+      <Project>{154B8EE2-E9CA-42ED-A511-3225BFAC95C5}</Project>
+      <Name>AlarmasABC.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+XtremeK Tracking System Todo List
+================================
+
+High Priority Tasks
+-------------------
+ - Add the alert code message to each of the positions on the map 
+   and beautify them.
+ 
+ 
+Medium Priority Tasks
+---------------------
+ - Make the refresh button a little bit smarter...
+ - Make the application use notifications of some sort when new data
+   is recieved from the database.
+ 
+Tasks In Consideration
+----------------------
+
+Other Tasks
+-----------

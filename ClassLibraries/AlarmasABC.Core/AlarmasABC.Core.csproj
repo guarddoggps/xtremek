@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{154B8EE2-E9CA-42ED-A511-3225BFAC95C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>AlarmasABC.Core</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <RootNamespace>AlarmasABC.Core</RootNamespace>
+    <ReleaseVersion>0.0.2</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binary\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binary\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <OutputType>Library</OutputType>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>
+    </RootNamespace>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="Admin\Company.cs" />
+    <Compile Include="Admin\Contact.cs" />
+    <Compile Include="Admin\ErrorReport.cs" />
+    <Compile Include="Admin\Fuel.cs" />
+    <Compile Include="Admin\GroupWiseUnit.cs" />
+    <Compile Include="Admin\IconSetup.cs" />
+    <Compile Include="Admin\ImageURL.cs" />
+    <Compile Include="Admin\Login.cs" />
+    <Compile Include="Admin\Pattern.cs" />
+    <Compile Include="Admin\RptTimeZone.cs" />
+    <Compile Include="Admin\SecurityQuestion.cs" />
+    <Compile Include="Admin\UnitModel.cs" />
+    <Compile Include="Admin\Units.cs" />
+    <Compile Include="Admin\UnitType.cs" />
+    <Compile Include="Admin\User.cs" />
+    <Compile Include="Admin\UserGroup.cs" />
+    <Compile Include="Admin\VAccount.cs" />
+    <Compile Include="Fleet\Supplies.cs" />
+    <Compile Include="Fleet\SuppliesPerPattern.cs" />
+    <Compile Include="Security\Group.cs" />
+    <Compile Include="Security\SchemePermission.cs" />
+    <Compile Include="Security\SecurityScheme.cs" />
+    <Compile Include="Security\User.cs" />
+    <Compile Include="Tracking\Geofence.cs" />
+    <Compile Include="Tracking\MapData.cs" />
+    <Compile Include="Tracking\RulesData.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Tracking\AlertData.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

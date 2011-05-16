@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{397F2878-2606-40E2-88B7-0AC537F89DAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>AlarmasABC.DAL</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <RootNamespace>AlarmasABC.DAL</RootNamespace>
+    <ReleaseVersion>0.0.2</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binary\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binary\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <OutputType>Library</OutputType>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>
+    </RootNamespace>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Npgsql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="DataAccessBase.cs" />
+    <Compile Include="DataBaseHelper.cs" />
+    <Compile Include="StoredProcedure.cs" />
+    <Compile Include="Delete\CompanyDelete.cs" />
+    <Compile Include="Delete\DeleteGprsData.cs" />
+    <Compile Include="Delete\DeleteImageInfo.cs" />
+    <Compile Include="Delete\DeleteSafetyZone.cs" />
+    <Compile Include="Delete\DeleteUnit.cs" />
+    <Compile Include="Delete\DeleteUser.cs" />
+    <Compile Include="Delete\IconDelete.cs" />
+    <Compile Include="Delete\PatternDelete.cs" />
+    <Compile Include="Delete\RulesDataDelete.cs" />
+    <Compile Include="Delete\UnitInfoDelete.cs" />
+    <Compile Include="Delete\UnitModelDelete.cs" />
+    <Compile Include="Delete\UnitTypeDelete.cs" />
+    <Compile Include="Delete\UnitUserInfoDelete.cs" />
+    <Compile Include="Delete\UserGroupDelete.cs" />
+    <Compile Include="Delete\UserUnitGroupDelete.cs" />
+    <Compile Include="Delete\UnitUserWiseDelete.cs" />
+    <Compile Include="Delete\UserWiseUnitCatDelete.cs" />
+    <Compile Include="Fleet\Delete\PatternDelete.cs" />
+    <Compile Include="Fleet\Delete\SuppliesDelete.cs" />
+    <Compile Include="Fleet\Delete\UnitsPerPatternDelete.cs" />
+    <Compile Include="Fleet\Insert\PatternInsert.cs" />
+    <Compile Include="Fleet\Insert\SuppliesInsert.cs" />
+    <Compile Include="Fleet\Insert\SuppliesPerPatternInsert.cs" />
+    <Compile Include="Fleet\Select\GPRSSelect.cs" />
+    <Compile Include="Fleet\Select\ListedUnitsSelect.cs" />
+    <Compile Include="Fleet\Select\MaintainanceStatusSelect.cs" />
+    <Compile Include="Fleet\Select\NotListedUnitsSelect.cs" />
+    <Compile Include="Fleet\Select\SuppliesSelect.cs" />
+    <Compile Include="Fleet\Select\SupplyPerPatternSelect.cs" />
+    <Compile Include="Fleet\Select\SuppPaternSelect.cs" />
+    <Compile Include="Fleet\Select\UnitCountSelect.cs" />
+    <Compile Include="Fleet\Select\UnitPerPatternSelect.cs" />
+    <Compile Include="Fleet\Select\UnitSelect.cs" />
+    <Compile Include="Fleet\Update\PatternMaintenaceUpdate.cs" />
+    <Compile Include="Fleet\Update\PatternUpdate.cs" />
+    <Compile Include="Fleet\Update\SuppliesUpdate.cs" />
+    <Compile Include="Fleet\Update\UnitsPerPatternUpdate.cs" />
+    <Compile Include="Fleet\Update\UnitUpdate.cs" />
+    <Compile Include="Insert\CompanyDataInsert.cs" />
+    <Compile Include="Insert\ContactDataInsert.cs" />
+    <Compile Include="Insert\GeofenceDataInsert.cs" />
+    <Compile Include="Insert\IconSetupDataInsert.cs" />
+    <Compile Include="Insert\ImageURLInsert.cs" />
+    <Compile Include="Insert\RulesDataInsert.cs" />
+    <Compile Include="Insert\SafetyZoneDataInsert.cs" />
+    <Compile Include="Insert\SpeedingDataInsert.cs" />
+    <Compile Include="Insert\UnitGroupInsert.cs" />
+    <Compile Include="Insert\UnitModelDataInsert.cs" />
+    <Compile Include="Insert\UnitInfoInsert.cs" />
+    <Compile Include="Insert\UnitsUserInfoInsert.cs" />
+    <Compile Include="Insert\UnitTypeDataInsert.cs" />
+    <Compile Include="Insert\UnitUserWiseInsert.cs" />
+    <Compile Include="Insert\UserDataInsert.cs" />
+    <Compile Include="Insert\UserGroupDataInsert.cs" />
+    <Compile Include="Insert\UserGroupWiseUnitDataInsert.cs" />
+    <Compile Include="Insert\UserUnitDataInsert.cs" />
+    <Compile Include="Insert\UserWiseUnitCatInsert.cs" />
+    <Compile Include="Insert\ViperAccountInsert.cs" />
+    <Compile Include="Queries\ExecuteSQL.cs" />
+    <Compile Include="Queries\Query.cs" />
+    <Compile Include="Security\Delete\SchemeDelete.cs" />
+    <Compile Include="Security\Select\ListedUserSelect.cs" />
+    <Compile Include="Security\Select\ModuleSelect.cs" />
+    <Compile Include="Security\Select\NotListedUserSelect.cs" />
+    <Compile Include="Security\Select\NotUserGroupSelect.cs" />
+    <Compile Include="Security\Select\SchemeGroupListSelect.cs" />
+    <Compile Include="Security\Select\SchemeInfoSelect.cs" />
+    <Compile Include="Security\Select\SchemeModuleSelect.cs" />
+    <Compile Include="Security\Select\SchemeSelect.cs" />
+    <Compile Include="Security\Select\SchemeUnitsSelect.cs" />
+    <Compile Include="Security\Select\SchemeUserListSelect.cs" />
+    <Compile Include="Security\Select\SchemeUsersSelect.cs" />
+    <Compile Include="Security\Select\UserGroupSelect.cs" />
+    <Compile Include="Select\AdminLogin.cs" />
+    <Compile Include="Select\BreadCrumbsDataSelect.cs" />
+    <Compile Include="Select\CheckUnitExistSelect.cs" />
+    <Compile Include="Select\CompanySelect.cs" />
+    <Compile Include="Select\CompanyUnitTypeSelect.cs" />
+    <Compile Include="Select\DeviceIDSelect.cs" />
+    <Compile Include="Select\ErrorReportSelect.cs" />
+    <Compile Include="Select\FuelSelect.cs" />
+    <Compile Include="Select\GeofenceDataSelect.cs" />
+    <Compile Include="Select\GroupListSelect.cs" />
+    <Compile Include="Select\HistoricalMapDataSelect.cs" />
+    <Compile Include="Select\IconSelect.cs" />
+    <Compile Include="Select\ImageInfoSelect.cs" />
+    <Compile Include="Select\ListedGroupSelect.cs" />
+    <Compile Include="Select\LoadImageSelect.cs" />
+    <Compile Include="Select\MainMapData.cs" />
+    <Compile Include="Select\MaxUnitIDSelect.cs" />
+    <Compile Include="Select\NotListedGroupSelect.cs" />
+    <Compile Include="Select\OutSideMail_Status_Select.cs" />
+    <Compile Include="Select\PasswordRetrive.cs" />
+    <Compile Include="Select\PatternSelect.cs" />
+    <Compile Include="Select\RulesDataSelect.cs" />
+    <Compile Include="Select\SafetyZoneSelect.cs" />
+    <Compile Include="Select\SecurityQuestionSelect.cs" />
+    <Compile Include="Select\SecuritySchemeSelect.cs" />
+    <Compile Include="Select\SelectEventList.cs" />
+    <Compile Include="Select\SelectSchemePermission.cs" />
+    <Compile Include="Select\SpeedingRulesSelect.cs" />
+    <Compile Include="Select\TimeZoneSelect.cs" />
+    <Compile Include="Select\TreeDataSelect.cs" />
+    <Compile Include="Select\UnitAndUnitGroupSelect.cs" />
+    <Compile Include="Select\UnitCountSelect.cs" />
+    <Compile Include="Select\UnitInfoSelect.cs" />
+    <Compile Include="Select\UnitModelAdSelect.cs" />
+    <Compile Include="Select\UnitModelSelect.cs" />
+    <Compile Include="Select\UnitNameSelect.cs" />
+    <Compile Include="Select\UnitTypeSelect.cs" />
+    <Compile Include="Select\UserGroupCompanyWiseSelect.cs" />
+    <Compile Include="Select\UserGroupSelect.cs" />
+    <Compile Include="Select\UserLogin.cs" />
+    <Compile Include="Select\UserSelect.cs" />
+    <Compile Include="Select\UsersTimeZoneSelect.cs" />
+    <Compile Include="Update\CompanyUpdate.cs" />
+    <Compile Include="Update\GeofenceDataUpdate.cs" />
+    <Compile Include="Update\ImageInfoUpdate.cs" />
+    <Compile Include="Update\RulesDataUpdate.cs" />
+    <Compile Include="Update\SpeedingRulesUpdate.cs" />
+    <Compile Include="Update\TimeZoneUpdate.cs" />
+    <Compile Include="Update\UnitModelUpdate.cs" />
+    <Compile Include="Update\UnitInfoUpdate.cs" />
+    <Compile Include="Update\UnitTypeUpdate.cs" />
+    <Compile Include="Update\UnitUserInfoUpdate.cs" />
+    <Compile Include="Update\UnitUserWiseUpdate.cs" />
+    <Compile Include="Update\UserGroupUpdate.cs" />
+    <Compile Include="Update\UserUpdate.cs" />
+    <Compile Include="Security\Update\GroupWiseSchemeUpdate.cs" />
+    <Compile Include="Security\Update\SchemeInfoUpdate.cs" />
+    <Compile Include="Security\Update\SchemePermissionUpdate.cs" />
+    <Compile Include="Security\Update\UserWiseSchemeUpdate.cs" />
+    <Compile Include="SQLHelper.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Select\AlertSelect.cs" />
+    <Compile Include="ReverseGeocoding.cs" />
+    <Compile Include="Insert\UnitCommandInsert.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\AlarmasABC.Core\AlarmasABC.Core.csproj">
+      <Project>{154B8EE2-E9CA-42ED-A511-3225BFAC95C5}</Project>
+      <Name>AlarmasABC.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmasABC.Core", "ClassLibraries\AlarmasABC.Core\AlarmasABC.Core.csproj", "{154B8EE2-E9CA-42ED-A511-3225BFAC95C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmasABC.BLL", "ClassLibraries\AlarmasABC.BLL\AlarmasABC.BLL.csproj", "{AFF75DF4-C573-4B36-9181-19E41FB538E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmasABC.DAL", "ClassLibraries\AlarmasABC.DAL\AlarmasABC.DAL.csproj", "{397F2878-2606-40E2-88B7-0AC537F89DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmasABC.Utilities", "ClassLibraries\AlarmasABC.Utilities\AlarmasABC.Utilities.csproj", "{148F3F17-6E23-4AB4-85E5-C5CE8B250103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XtremeK Tracking System", "XtremeK Tracking System\XtremeK Tracking System.csproj", "{9ABAF734-C899-474B-9922-968D424C411E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{148F3F17-6E23-4AB4-85E5-C5CE8B250103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{148F3F17-6E23-4AB4-85E5-C5CE8B250103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{148F3F17-6E23-4AB4-85E5-C5CE8B250103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{148F3F17-6E23-4AB4-85E5-C5CE8B250103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{154B8EE2-E9CA-42ED-A511-3225BFAC95C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{154B8EE2-E9CA-42ED-A511-3225BFAC95C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{154B8EE2-E9CA-42ED-A511-3225BFAC95C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{154B8EE2-E9CA-42ED-A511-3225BFAC95C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397F2878-2606-40E2-88B7-0AC537F89DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397F2878-2606-40E2-88B7-0AC537F89DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397F2878-2606-40E2-88B7-0AC537F89DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397F2878-2606-40E2-88B7-0AC537F89DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ABAF734-C899-474B-9922-968D424C411E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ABAF734-C899-474B-9922-968D424C411E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ABAF734-C899-474B-9922-968D424C411E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ABAF734-C899-474B-9922-968D424C411E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFF75DF4-C573-4B36-9181-19E41FB538E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF75DF4-C573-4B36-9181-19E41FB538E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF75DF4-C573-4B36-9181-19E41FB538E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF75DF4-C573-4B36-9181-19E41FB538E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{680464F7-3E94-497B-9E15-8C265A6EB5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{680464F7-3E94-497B-9E15-8C265A6EB5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{680464F7-3E94-497B-9E15-8C265A6EB5CC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{680464F7-3E94-497B-9E15-8C265A6EB5CC}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = XtremeK Tracking System\XtremeK Tracking System.csproj
+		Policies = $0
+		$0.StandardHeader = $1
+		$1.Text = 
+		$1.inheritsSet = Apache2License
+		version = 0.0.2
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

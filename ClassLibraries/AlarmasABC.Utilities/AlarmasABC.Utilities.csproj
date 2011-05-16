@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{148F3F17-6E23-4AB4-85E5-C5CE8B250103}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>AlarmasABC.Utilities</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <RootNamespace>AlarmasABC.Utilities</RootNamespace>
+    <ReleaseVersion>0.0.2</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binary\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binary\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <OutputType>Library</OutputType>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>
+    </RootNamespace>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="EncDec.cs" />
+    <Compile Include="Mailer.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="Utility\AlarmStatus.cs" />
+    <Compile Include="Utility\CheckGeofence.cs" />
+    <Compile Include="Utility\DistanceCalculator.cs" />
+    <Compile Include="Utility\EncDec.cs" />
+    <Compile Include="Utility\FormPermission.cs" />
+    <Compile Include="Utility\InfoSetup.cs" />
+    <Compile Include="Utility\TreeViewState.cs" />
+    <Compile Include="Utility\Utilities.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Npgsql" />
+    <Reference Include="System.Data" />
+    <Reference Include="Telerik.Charting, Version=2.0.1.0, Culture=neutral, PublicKeyToken=d14f3dcc8e3e8763">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XtremeK Tracking System\Bin\Telerik.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2008.1.515.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XtremeK Tracking System\Bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio />
+  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\AlarmasABC.DAL\AlarmasABC.DAL.csproj">
+      <Project>{397F2878-2606-40E2-88B7-0AC537F89DAF}</Project>
+      <Name>AlarmasABC.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlarmasABC.BLL\AlarmasABC.BLL.csproj">
+      <Project>{AFF75DF4-C573-4B36-9181-19E41FB538E1}</Project>
+      <Name>AlarmasABC.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
