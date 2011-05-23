@@ -1,0 +1,167 @@
+html,body,form 
+{ 
+    background:#AAA;  
+    margin:0; 
+    padding:0; 
+    width:100%;
+    background-image: url('../Images/background.png');
+    background-repeat:repeat;
+}
+
+a 
+{
+    color:#40768d;
+    font-family:"Myriad Pro";
+    font-size:14px;
+    text-align: center;
+}
+
+.page
+{
+	height: 100%;
+}
+
+/* AlarmasABC logo on the Login page */
+.logo_abc 
+{ 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height:60px; 
+    width:140px;
+    background-image: url('../Images/Logos/alarmasabc.png');
+    background-repeat:no-repeat; 
+} 
+
+/* XtremeK Logo on the Login page */
+.logo_xtremek 
+{
+    position: absolute;
+    top: 4px;
+    left: 146px;
+    height:68px; 
+    width:238px;
+    background-image: url('../Images/Logos/xtremek.png');
+    background-repeat:no-repeat; 
+}
+
+/* This is the header for the login page */
+.header
+{
+    float:right; 
+    width:100%; 
+    text-align:center;
+}
+
+/* This is a floater to help center the login form vertically */
+.floater
+{
+    float:left; 
+    height:25%; 
+}
+
+/* This is to wrap the login page elements */
+.wrapper
+{
+    height: 340px; 
+    width: 100%;
+    clear:both;
+    position:relative;
+}
+
+/* This is the form for the login page */
+.form
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../Images/login2.png');
+    background-repeat: no-repeat;  
+    height:100%;
+    width: 380px;
+}
+
+/* Center login page elements */
+.center
+{
+    width:320px;
+    height:300px;
+    position: relative;
+    top: 52px;
+    left: 30px;
+}
+
+/* Login page default label style */
+.form_label
+{
+    float:left;
+    width:100px;
+    height:20px;
+    margin-top:10px;
+    font-family:"Myriad Pro";
+    font-size:14px;
+    color:#000000;
+    text-align:center;
+}
+
+/* Login page message style */
+.form_message
+{
+    float:right;
+    width:200px;
+    height:20px;
+    margin-top:10px;
+    margin-right: 40px;
+    font-family:"Myriad Pro";
+    font-size: 0.8em;
+}
+
+/* Login page text field style */
+.form_text_field
+{
+    float:right;
+    width:150px;
+    height:20px;
+    margin-top:10px;
+    margin-right: 60px;
+}
+
+/* Single line text boxes */
+.form_text_box 
+{
+    border: solid 1px #DCDCDC;
+    background-color: #fff;
+    overflow:visible;
+    width: 160px;
+    height:20px;
+    margin-top: -2px;
+    font-family: Trebuchet MS;
+    font-size: 12px;
+    font-weight: normal;
+    color: #666666;
+    vertical-align:middle;
+}
+
+/* Login page text field link style */
+.form_text_field_link a
+{
+    float: left;
+    height:20px;
+    font-weight:bold;
+    margin-top: 10px;
+    text-decoration:none;
+}
+
+/* This is for the terms box on the login page */
+.form_terms
+{
+    float: left;
+    color: gray; 
+    border: 1px solid #DCDCDC;
+    font-weight: normal; 
+    font-size: 0.8em; 
+    text-align: center; 
+    padding-top: 4px; 
+    margin-left: 10px;
+    width: 300px; 
+    height: 36px;
+}

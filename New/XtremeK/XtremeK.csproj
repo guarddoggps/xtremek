@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E718C836-5966-4621-A24C-D4A85F73006E}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AssemblyName>XtremeK</AssemblyName>
+    <RootNamespace>XtremeK</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Telerik.Charting, Version=2.0.1.0, Culture=neutral, PublicKeyToken=d14f3dcc8e3e8763">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XtremeK\XtremeK Tracking System\Bin\Telerik.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2008.1.515.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XtremeK\XtremeK Tracking System\Bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="web.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Images\background.png" />
+    <Content Include="Images\submit.png" />
+    <Content Include="Images\login.png" />
+    <Content Include="Images\login2.png" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\Logos\xtremek.png" />
+    <Content Include="Images\Logos\alarmasabc.png" />
+    <Content Include="Map\BreadCrumbs.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\BreadCrumbs.aspx.cs">
+      <DependentUpon>BreadCrumbs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\BreadCrumbs.aspx.designer.cs">
+      <DependentUpon>BreadCrumbs.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="true" VerifyCodeBehindEvents="true">
+        <XspParameters Port="8081" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="true" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="CSS\" />
+    <Folder Include="Images\" />
+    <Folder Include="Map\" />
+    <Folder Include="Images\Logos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibraries\AlarmasABC.DAL\AlarmasABC.DAL.csproj">
+      <Project>{D254D0BF-5F8A-44AD-AE83-D7144D10CDE9}</Project>
+      <Name>AlarmasABC.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraries\AlarmasABC.BLL\AlarmasABC.BLL.csproj">
+      <Project>{6F4295AC-4AB2-4EC3-B56B-4FE00357B35E}</Project>
+      <Name>AlarmasABC.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraries\AlarmasABC.Core\AlarmasABC.Core.csproj">
+      <Project>{1E63BF70-700A-420E-A366-32359BF16847}</Project>
+      <Name>AlarmasABC.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraries\AlarmasABC.Utilities\AlarmasABC.Utilities.csproj">
+      <Project>{00070864-E38C-492A-85E7-87C4A56F9B84}</Project>
+      <Name>AlarmasABC.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CSS\Login.css" />
+    <None Include="CSS\Home.css" />
+  </ItemGroup>
+</Project>

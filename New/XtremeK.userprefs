@@ -1,0 +1,48 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workbench ActiveDocument="XtremeK/Home.aspx">
+    <Files>
+      <File FileName="XtremeK/Map/BreadCrumbs.aspx" Line="7" Column="2" />
+      <File FileName="XtremeK/Map/BreadCrumbs.aspx.cs" Line="61" Column="21" />
+      <File FileName="XtremeK/Home.aspx.cs" Line="66" Column="29" />
+      <File FileName="XtremeK/Home.aspx" Line="100" Column="19" />
+      <File FileName="XtremeK/CSS/Home.css" Line="69" Column="22" />
+      <File FileName="XtremeK/Global.asax.cs" Line="17" Column="65" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="ClassLibraries" expanded="True">
+            <Node name="AlarmasABC.DAL" expanded="True">
+              <Node name="Select" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="XtremeK" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="CSS" expanded="True" />
+            <Node name="Images" expanded="True" />
+            <Node name="Map" expanded="True">
+              <Node name="BreadCrumbs.aspx" expanded="True" />
+            </Node>
+            <Node name="Global.asax" expanded="True" />
+            <Node name="Home.aspx" expanded="True" selected="True" />
+            <Node name="Login.aspx" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
